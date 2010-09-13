@@ -1,0 +1,8 @@
+C:\Users\CARITO\Desktop\SOFTCOLJAGA\SOFTCOLJAGA\bin\SOFTCOLJAGA.dll
+C:\Users\CARITO\Desktop\SOFTCOLJAGA\SOFTCOLJAGA\bin\SOFTCOLJAGA.pdb
+C:\Users\CARITO\Desktop\SOFTCOLJAGA\SOFTCOLJAGA\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\CARITO\Desktop\SOFTCOLJAGA\SOFTCOLJAGA\obj\Debug\SOFTCOLJAGA.dll
+C:\Users\CARITO\Desktop\SOFTCOLJAGA\SOFTCOLJAGA\obj\Debug\SOFTCOLJAGA.pdb
+C:\Users\CARITO\Desktop\SOFTCOLJAGA\SOFTCOLJAGA\bin\images\matematicas\tema1.jpg
+C:\Users\CARITO\Desktop\SOFTCOLJAGA\SOFTCOLJAGA\obj\Debug\SOFTCOLJAGA.Properties.Resources.resources
+C:\Users\CARITO\Desktop\SOFTCOLJAGA\SOFTCOLJAGA\obj\Debug\SOFTCOLJAGA.csproj.GenerateResource.Cache

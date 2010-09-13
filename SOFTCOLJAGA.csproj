@@ -1,0 +1,749 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9FD7F62A-FD51-4C66-9B99-4388BB3B8D77}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SOFTCOLJAGA</RootNamespace>
+    <AssemblyName>SOFTCOLJAGA</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v9.3, Version=9.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxEditors.v9.3, Version=9.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxScheduler.v9.3, Version=9.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v9.3, Version=9.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v9.3.Core, Version=9.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.2.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CrearPreguntas.aspx" />
+    <Content Include="CuestionariosEduFisica\cuestionario_edufisica_tema4.aspx" />
+    <Content Include="CuestionariosEduFisica\cuestionario_edufisica_tema3.aspx" />
+    <Content Include="CuestionariosEduFisica\cuestionario_edufisica_tema2.aspx" />
+    <Content Include="CuestionariosEduFisica\cuestionario_edufisica_tema1.aspx" />
+    <Content Include="CuestionariosNaturales\cuestionario_naturales_tema11.aspx" />
+    <Content Include="CuestionariosNaturales\cuestionario_naturales_tema10.aspx" />
+    <Content Include="CuestionariosNaturales\cuestionario_naturales_tema9.aspx" />
+    <Content Include="CuestionariosNaturales\cuestionario_naturales_tema8.aspx" />
+    <Content Include="CuestionariosNaturales\cuestionario_naturales_tema7.aspx" />
+    <Content Include="CuestionariosNaturales\cuestionario_naturales_tema6.aspx" />
+    <Content Include="CuestionariosNaturales\cuestionario_naturales_tema5.aspx" />
+    <Content Include="CuestionariosNaturales\cuestionario_naturales_tema4.aspx" />
+    <Content Include="CuestionariosNaturales\cuestionario_naturales_tema3.aspx" />
+    <Content Include="CuestionariosNaturales\cuestionario_naturales_tema2.aspx" />
+    <Content Include="CuestionariosSociales\cuestionario_sociales_tema1.aspx" />
+    <Content Include="CuestionariosSociales\cuestionario_sociales_tema6.aspx" />
+    <Content Include="CuestionariosSociales\cuestionario_sociales_tema5.aspx" />
+    <Content Include="CuestionariosSociales\cuestionario_sociales_tema4.aspx" />
+    <Content Include="CuestionariosSociales\cuestionario_sociales_tema3.aspx" />
+    <Content Include="CuestionariosSociales\cuestionario_sociales_tema2.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="IniciarSesion.aspx" />
+    <Content Include="CuestionariosMatematicas\cuestionario_matematicas_tema5.aspx" />
+    <Content Include="CuestionariosMatematicas\cuestionario_matematicas_tema8.aspx" />
+    <Content Include="CuestionariosMatematicas\cuestionario_matematicas_tema7.aspx" />
+    <Content Include="CuestionariosMatematicas\cuestionario_matematicas_tema6.aspx" />
+    <Content Include="CuestionariosMatematicas\cuestionario_matematicas_tema4.aspx" />
+    <Content Include="CuestionariosMatematicas\cuestionario_matematicas_tema3.aspx" />
+    <Content Include="CuestionariosMatematicas\cuestionario_matematicas_tema2.aspx" />
+    <Content Include="CuestionariosMatematicas\cuestionario_matematicas_tema1.aspx" />
+    <Content Include="CuestionariosNaturales\cuestionario_naturales_tema1.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="EduFisica\EduFisica_menu.aspx" />
+    <Content Include="EduFisica\edufisica_tema1.aspx" />
+    <Content Include="EduFisica\edufisica_tema2.aspx" />
+    <Content Include="EduFisica\edufisica_tema3.aspx" />
+    <Content Include="EduFisica\edufisica_tema4.aspx" />
+    <Content Include="formularioDePrueba.aspx" />
+    <Content Include="images\EduFisica\imagen1.jpg" />
+    <Content Include="images\EduFisica\imagen2.jpg" />
+    <Content Include="images\EduFisica\imagen3.gif" />
+    <Content Include="images\EduFisica\imagen3.jpg" />
+    <Content Include="images\EduFisica\imagen4.gif" />
+    <Content Include="images\EduFisica\imagen4.jpg" />
+    <Content Include="images\EduFisica\imagen5.jpg" />
+    <Content Include="images\EduFisica\imagen6.jpg" />
+    <Content Include="images\EduFisica\imagen7.jpg" />
+    <Content Include="images\mate1.jpg" />
+    <Content Include="images\naturales-imagenes\imagen10.jpg" />
+    <Content Include="images\naturales-imagenes\imagen11.jpg" />
+    <Content Include="images\naturales-imagenes\imagen12.jpg" />
+    <Content Include="images\naturales-imagenes\imagen13.jpg" />
+    <Content Include="images\naturales-imagenes\imagen14.jpg" />
+    <Content Include="images\naturales-imagenes\imagen15.jpg" />
+    <Content Include="images\naturales-imagenes\imagen16.gif" />
+    <Content Include="images\naturales-imagenes\imagen17.jpg" />
+    <Content Include="images\naturales-imagenes\imagen18.jpg" />
+    <Content Include="images\naturales-imagenes\imagen19.jpg" />
+    <Content Include="images\naturales-imagenes\imagen20.jpg" />
+    <Content Include="images\naturales-imagenes\imagen5.jpg" />
+    <Content Include="images\naturales-imagenes\imagen6.jpg" />
+    <Content Include="images\matematicas\descarga.jpg" />
+    <Content Include="images\matematicas\imagen10.png" />
+    <Content Include="images\matematicas\imagen11.png" />
+    <Content Include="images\matematicas\imagen12.png" />
+    <Content Include="images\matematicas\imagen2.png" />
+    <Content Include="images\matematicas\imagen3.png" />
+    <Content Include="images\matematicas\imagen4.png" />
+    <Content Include="images\matematicas\imagen5.png" />
+    <Content Include="images\matematicas\imagen6.png" />
+    <Content Include="images\matematicas\imagen7.png" />
+    <Content Include="images\matematicas\imagen8.png" />
+    <Content Include="images\matematicas\imagen9.png" />
+    <Content Include="images\matematicas\tema1-imagen2.jpg" />
+    <Content Include="images\matematicas\tema1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\naturales-imagenes\imagen1.jpg" />
+    <Content Include="images\naturales-imagenes\imagen2.jpg" />
+    <Content Include="images\naturales-imagenes\imagen3.jpg" />
+    <Content Include="images\naturales-imagenes\imagen4.jpg" />
+    <Content Include="images\naturales-imagenes\imagen7.jpg" />
+    <Content Include="images\naturales-imagenes\imagen8.jpg" />
+    <Content Include="images\naturales-imagenes\imagen9.jpg" />
+    <Content Include="images\Sin título.png" />
+    <Content Include="images\sociales\imagen1.jpg" />
+    <Content Include="images\sociales\imagen10.jpg" />
+    <Content Include="images\sociales\imagen11.jpg" />
+    <Content Include="images\sociales\imagen12.jpg" />
+    <Content Include="images\sociales\imagen13.jpg" />
+    <Content Include="images\sociales\imagen2.jpg" />
+    <Content Include="images\sociales\imagen3.jpg" />
+    <Content Include="images\sociales\imagen4.jpg" />
+    <Content Include="images\sociales\imagen5.jpg" />
+    <Content Include="images\sociales\imagen6.gif" />
+    <Content Include="images\sociales\imagen7.jpg" />
+    <Content Include="images\sociales\imagen8.jpg" />
+    <Content Include="images\sociales\imagen9.jpg" />
+    <Content Include="images\Softcoljaga.jpg" />
+    <Content Include="images\templatemo_bg_middle.jpg" />
+    <Content Include="images\templatemo_bg_top.jpg" />
+    <Content Include="images\templatemo_blue_2_col_bg.jpg" />
+    <Content Include="images\templatemo_blue_2_col_bottom.jpg" />
+    <Content Include="images\templatemo_blue_2_col_joint.jpg" />
+    <Content Include="images\templatemo_blue_content_bg.jpg" />
+    <Content Include="images\templatemo_bullet.jpg" />
+    <Content Include="images\templatemo_header.jpg" />
+    <Content Include="images\templatemo_header_blank.jpg" />
+    <Content Include="images\templatemo_thumbs.jpg" />
+    <Content Include="images\templatemo_thumb_1.jpg" />
+    <Content Include="images\templatemo_thumb_2.jpg" />
+    <Content Include="images\templatemo_thumb_3.jpg" />
+    <Content Include="images\templatemo_white_blue_joint.jpg" />
+    <Content Include="images\templatemo_white_content_middle.jpg" />
+    <Content Include="images\templatemo_white_content_top.jpg" />
+    <Content Include="matematicas_menu.aspx" />
+    <Content Include="matematicas_tema1.aspx" />
+    <Content Include="matematicas_tema2.aspx" />
+    <Content Include="matematicas_tema3.aspx" />
+    <Content Include="matematicas_tema4.aspx" />
+    <Content Include="matematicas_tema5.aspx" />
+    <Content Include="matematicas_tema6.aspx" />
+    <Content Include="matematicas_tema7.aspx" />
+    <Content Include="matematicas_tema8.aspx" />
+    <Content Include="Naturales\naturales_menu.aspx" />
+    <Content Include="Naturales\naturales_tema1.aspx" />
+    <Content Include="Naturales\naturales_tema10.aspx" />
+    <Content Include="Naturales\naturales_tema11.aspx" />
+    <Content Include="Naturales\naturales_tema12.aspx" />
+    <Content Include="Naturales\naturales_tema13.aspx" />
+    <Content Include="Naturales\naturales_tema2.aspx" />
+    <Content Include="Naturales\naturales_tema3.aspx" />
+    <Content Include="Naturales\naturales_tema4.aspx" />
+    <Content Include="Naturales\naturales_tema5.aspx" />
+    <Content Include="Naturales\naturales_tema6.aspx" />
+    <Content Include="Naturales\naturales_tema9.aspx" />
+    <Content Include="Registrarse.aspx" />
+    <Content Include="Sociales_\sociales_menu.aspx" />
+    <Content Include="Sociales_\sociales_tema1.aspx" />
+    <Content Include="Sociales_\sociales_tema2.aspx" />
+    <Content Include="Sociales_\sociales_tema3.aspx" />
+    <Content Include="Sociales_\sociales_tema4.aspx" />
+    <Content Include="Sociales_\sociales_tema5.aspx" />
+    <Content Include="Sociales_\sociales_tema6.aspx" />
+    <Content Include="templatemo_style.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CrearPreguntas.aspx.cs">
+      <DependentUpon>CrearPreguntas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CrearPreguntas.aspx.designer.cs">
+      <DependentUpon>CrearPreguntas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CuestionariosEduFisica\cuestionario_edufisica_tema4.aspx.cs">
+      <DependentUpon>cuestionario_edufisica_tema4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CuestionariosEduFisica\cuestionario_edufisica_tema4.aspx.designer.cs">
+      <DependentUpon>cuestionario_edufisica_tema4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CuestionariosEduFisica\cuestionario_edufisica_tema3.aspx.cs">
+      <DependentUpon>cuestionario_edufisica_tema3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CuestionariosEduFisica\cuestionario_edufisica_tema3.aspx.designer.cs">
+      <DependentUpon>cuestionario_edufisica_tema3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CuestionariosEduFisica\cuestionario_edufisica_tema2.aspx.cs">
+      <DependentUpon>cuestionario_edufisica_tema2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CuestionariosEduFisica\cuestionario_edufisica_tema2.aspx.designer.cs">
+      <DependentUpon>cuestionario_edufisica_tema2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CuestionariosEduFisica\cuestionario_edufisica_tema1.aspx.cs">
+      <DependentUpon>cuestionario_edufisica_tema1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CuestionariosEduFisica\cuestionario_edufisica_tema1.aspx.designer.cs">
+      <DependentUpon>cuestionario_edufisica_tema1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CuestionariosNaturales\cuestionario_naturales_tema11.aspx.cs">
+      <DependentUpon>cuestionario_naturales_tema11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CuestionariosNaturales\cuestionario_naturales_tema11.aspx.designer.cs">
+      <DependentUpon>cuestionario_naturales_tema11.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CuestionariosNaturales\cuestionario_naturales_tema10.aspx.cs">
+      <DependentUpon>cuestionario_naturales_tema10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CuestionariosNaturales\cuestionario_naturales_tema10.aspx.designer.cs">
+      <DependentUpon>cuestionario_naturales_tema10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CuestionariosNaturales\cuestionario_naturales_tema9.aspx.cs">
+      <DependentUpon>cuestionario_naturales_tema9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CuestionariosNaturales\cuestionario_naturales_tema9.aspx.designer.cs">
+      <DependentUpon>cuestionario_naturales_tema9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CuestionariosNaturales\cuestionario_naturales_tema8.aspx.cs">
+      <DependentUpon>cuestionario_naturales_tema8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CuestionariosNaturales\cuestionario_naturales_tema8.aspx.designer.cs">
+      <DependentUpon>cuestionario_naturales_tema8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CuestionariosNaturales\cuestionario_naturales_tema7.aspx.cs">
+      <DependentUpon>cuestionario_naturales_tema7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CuestionariosNaturales\cuestionario_naturales_tema7.aspx.designer.cs">
+      <DependentUpon>cuestionario_naturales_tema7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CuestionariosNaturales\cuestionario_naturales_tema6.aspx.cs">
+      <DependentUpon>cuestionario_naturales_tema6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CuestionariosNaturales\cuestionario_naturales_tema6.aspx.designer.cs">
+      <DependentUpon>cuestionario_naturales_tema6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CuestionariosNaturales\cuestionario_naturales_tema5.aspx.cs">
+      <DependentUpon>cuestionario_naturales_tema5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CuestionariosNaturales\cuestionario_naturales_tema5.aspx.designer.cs">
+      <DependentUpon>cuestionario_naturales_tema5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CuestionariosNaturales\cuestionario_naturales_tema4.aspx.cs">
+      <DependentUpon>cuestionario_naturales_tema4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CuestionariosNaturales\cuestionario_naturales_tema4.aspx.designer.cs">
+      <DependentUpon>cuestionario_naturales_tema4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CuestionariosNaturales\cuestionario_naturales_tema3.aspx.cs">
+      <DependentUpon>cuestionario_naturales_tema3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CuestionariosNaturales\cuestionario_naturales_tema3.aspx.designer.cs">
+      <DependentUpon>cuestionario_naturales_tema3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CuestionariosNaturales\cuestionario_naturales_tema2.aspx.cs">
+      <DependentUpon>cuestionario_naturales_tema2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CuestionariosNaturales\cuestionario_naturales_tema2.aspx.designer.cs">
+      <DependentUpon>cuestionario_naturales_tema2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CuestionariosSociales\cuestionario_sociales_tema1.aspx.cs">
+      <DependentUpon>cuestionario_sociales_tema1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CuestionariosSociales\cuestionario_sociales_tema1.aspx.designer.cs">
+      <DependentUpon>cuestionario_sociales_tema1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CuestionariosSociales\cuestionario_sociales_tema6.aspx.cs">
+      <DependentUpon>cuestionario_sociales_tema6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CuestionariosSociales\cuestionario_sociales_tema6.aspx.designer.cs">
+      <DependentUpon>cuestionario_sociales_tema6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CuestionariosSociales\cuestionario_sociales_tema5.aspx.cs">
+      <DependentUpon>cuestionario_sociales_tema5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CuestionariosSociales\cuestionario_sociales_tema5.aspx.designer.cs">
+      <DependentUpon>cuestionario_sociales_tema5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CuestionariosSociales\cuestionario_sociales_tema4.aspx.cs">
+      <DependentUpon>cuestionario_sociales_tema4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CuestionariosSociales\cuestionario_sociales_tema4.aspx.designer.cs">
+      <DependentUpon>cuestionario_sociales_tema4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CuestionariosSociales\cuestionario_sociales_tema3.aspx.cs">
+      <DependentUpon>cuestionario_sociales_tema3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CuestionariosSociales\cuestionario_sociales_tema3.aspx.designer.cs">
+      <DependentUpon>cuestionario_sociales_tema3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CuestionariosSociales\cuestionario_sociales_tema2.aspx.cs">
+      <DependentUpon>cuestionario_sociales_tema2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CuestionariosSociales\cuestionario_sociales_tema2.aspx.designer.cs">
+      <DependentUpon>cuestionario_sociales_tema2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="IniciarSesion.aspx.cs">
+      <DependentUpon>IniciarSesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IniciarSesion.aspx.designer.cs">
+      <DependentUpon>IniciarSesion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CuestionariosMatematicas\cuestionario_matematicas_tema5.aspx.cs">
+      <DependentUpon>cuestionario_matematicas_tema5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CuestionariosMatematicas\cuestionario_matematicas_tema5.aspx.designer.cs">
+      <DependentUpon>cuestionario_matematicas_tema5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CuestionariosMatematicas\cuestionario_matematicas_tema8.aspx.cs">
+      <DependentUpon>cuestionario_matematicas_tema8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CuestionariosMatematicas\cuestionario_matematicas_tema8.aspx.designer.cs">
+      <DependentUpon>cuestionario_matematicas_tema8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CuestionariosMatematicas\cuestionario_matematicas_tema7.aspx.cs">
+      <DependentUpon>cuestionario_matematicas_tema7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CuestionariosMatematicas\cuestionario_matematicas_tema7.aspx.designer.cs">
+      <DependentUpon>cuestionario_matematicas_tema7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CuestionariosMatematicas\cuestionario_matematicas_tema6.aspx.cs">
+      <DependentUpon>cuestionario_matematicas_tema6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CuestionariosMatematicas\cuestionario_matematicas_tema6.aspx.designer.cs">
+      <DependentUpon>cuestionario_matematicas_tema6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CuestionariosMatematicas\cuestionario_matematicas_tema4.aspx.cs">
+      <DependentUpon>cuestionario_matematicas_tema4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CuestionariosMatematicas\cuestionario_matematicas_tema4.aspx.designer.cs">
+      <DependentUpon>cuestionario_matematicas_tema4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CuestionariosMatematicas\cuestionario_matematicas_tema3.aspx.cs">
+      <DependentUpon>cuestionario_matematicas_tema3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CuestionariosMatematicas\cuestionario_matematicas_tema3.aspx.designer.cs">
+      <DependentUpon>cuestionario_matematicas_tema3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CuestionariosMatematicas\cuestionario_matematicas_tema2.aspx.cs">
+      <DependentUpon>cuestionario_matematicas_tema2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CuestionariosMatematicas\cuestionario_matematicas_tema2.aspx.designer.cs">
+      <DependentUpon>cuestionario_matematicas_tema2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CuestionariosMatematicas\cuestionario_matematicas_tema1.aspx.cs">
+      <DependentUpon>cuestionario_matematicas_tema1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CuestionariosMatematicas\cuestionario_matematicas_tema1.aspx.designer.cs">
+      <DependentUpon>cuestionario_matematicas_tema1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CuestionariosNaturales\cuestionario_naturales_tema1.aspx.cs">
+      <DependentUpon>cuestionario_naturales_tema1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CuestionariosNaturales\cuestionario_naturales_tema1.aspx.designer.cs">
+      <DependentUpon>cuestionario_naturales_tema1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datos.cs" />
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EduFisica\EduFisica_menu.aspx.cs">
+      <DependentUpon>EduFisica_menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EduFisica\EduFisica_menu.aspx.designer.cs">
+      <DependentUpon>EduFisica_menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EduFisica\edufisica_tema1.aspx.cs">
+      <DependentUpon>edufisica_tema1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EduFisica\edufisica_tema1.aspx.designer.cs">
+      <DependentUpon>edufisica_tema1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EduFisica\edufisica_tema2.aspx.cs">
+      <DependentUpon>edufisica_tema2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EduFisica\edufisica_tema2.aspx.designer.cs">
+      <DependentUpon>edufisica_tema2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EduFisica\edufisica_tema3.aspx.cs">
+      <DependentUpon>edufisica_tema3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EduFisica\edufisica_tema3.aspx.designer.cs">
+      <DependentUpon>edufisica_tema3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EduFisica\edufisica_tema4.aspx.cs">
+      <DependentUpon>edufisica_tema4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EduFisica\edufisica_tema4.aspx.designer.cs">
+      <DependentUpon>edufisica_tema4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formularioDePrueba.aspx.cs">
+      <DependentUpon>formularioDePrueba.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formularioDePrueba.aspx.designer.cs">
+      <DependentUpon>formularioDePrueba.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="matematicas_menu.aspx.cs">
+      <DependentUpon>matematicas_menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="matematicas_menu.aspx.designer.cs">
+      <DependentUpon>matematicas_menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="matematicas_tema1.aspx.cs">
+      <DependentUpon>matematicas_tema1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="matematicas_tema1.aspx.designer.cs">
+      <DependentUpon>matematicas_tema1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="matematicas_tema2.aspx.cs">
+      <DependentUpon>matematicas_tema2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="matematicas_tema2.aspx.designer.cs">
+      <DependentUpon>matematicas_tema2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="matematicas_tema3.aspx.cs">
+      <DependentUpon>matematicas_tema3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="matematicas_tema3.aspx.designer.cs">
+      <DependentUpon>matematicas_tema3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="matematicas_tema4.aspx.cs">
+      <DependentUpon>matematicas_tema4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="matematicas_tema4.aspx.designer.cs">
+      <DependentUpon>matematicas_tema4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="matematicas_tema5.aspx.cs">
+      <DependentUpon>matematicas_tema5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="matematicas_tema5.aspx.designer.cs">
+      <DependentUpon>matematicas_tema5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="matematicas_tema6.aspx.cs">
+      <DependentUpon>matematicas_tema6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="matematicas_tema6.aspx.designer.cs">
+      <DependentUpon>matematicas_tema6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="matematicas_tema7.aspx.cs">
+      <DependentUpon>matematicas_tema7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="matematicas_tema7.aspx.designer.cs">
+      <DependentUpon>matematicas_tema7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="matematicas_tema8.aspx.cs">
+      <DependentUpon>matematicas_tema8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="matematicas_tema8.aspx.designer.cs">
+      <DependentUpon>matematicas_tema8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Naturales\naturales_menu.aspx.cs">
+      <DependentUpon>naturales_menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Naturales\naturales_menu.aspx.designer.cs">
+      <DependentUpon>naturales_menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Naturales\naturales_tema1.aspx.cs">
+      <DependentUpon>naturales_tema1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Naturales\naturales_tema1.aspx.designer.cs">
+      <DependentUpon>naturales_tema1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Naturales\naturales_tema10.aspx.cs">
+      <DependentUpon>naturales_tema10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Naturales\naturales_tema10.aspx.designer.cs">
+      <DependentUpon>naturales_tema10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Naturales\naturales_tema11.aspx.cs">
+      <DependentUpon>naturales_tema11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Naturales\naturales_tema11.aspx.designer.cs">
+      <DependentUpon>naturales_tema11.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Naturales\naturales_tema12.aspx.cs">
+      <DependentUpon>naturales_tema12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Naturales\naturales_tema12.aspx.designer.cs">
+      <DependentUpon>naturales_tema12.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Naturales\naturales_tema13.aspx.cs">
+      <DependentUpon>naturales_tema13.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Naturales\naturales_tema13.aspx.designer.cs">
+      <DependentUpon>naturales_tema13.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Naturales\naturales_tema2.aspx.cs">
+      <DependentUpon>naturales_tema2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Naturales\naturales_tema2.aspx.designer.cs">
+      <DependentUpon>naturales_tema2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Naturales\naturales_tema3.aspx.cs">
+      <DependentUpon>naturales_tema3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Naturales\naturales_tema3.aspx.designer.cs">
+      <DependentUpon>naturales_tema3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Naturales\naturales_tema4.aspx.cs">
+      <DependentUpon>naturales_tema4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Naturales\naturales_tema4.aspx.designer.cs">
+      <DependentUpon>naturales_tema4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Naturales\naturales_tema5.aspx.cs">
+      <DependentUpon>naturales_tema5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Naturales\naturales_tema5.aspx.designer.cs">
+      <DependentUpon>naturales_tema5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Naturales\naturales_tema6.aspx.cs">
+      <DependentUpon>naturales_tema6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Naturales\naturales_tema6.aspx.designer.cs">
+      <DependentUpon>naturales_tema6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Naturales\naturales_tema9.aspx.cs">
+      <DependentUpon>naturales_tema9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Naturales\naturales_tema9.aspx.designer.cs">
+      <DependentUpon>naturales_tema9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Registrarse.aspx.cs">
+      <DependentUpon>Registrarse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registrarse.aspx.designer.cs">
+      <DependentUpon>Registrarse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Seleccionar\Consultas.cs" />
+    <Compile Include="Seleccionar\Seleccionar.cs" />
+    <Compile Include="Sociales_\sociales_menu.aspx.cs">
+      <DependentUpon>sociales_menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sociales_\sociales_menu.aspx.designer.cs">
+      <DependentUpon>sociales_menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sociales_\sociales_tema1.aspx.cs">
+      <DependentUpon>sociales_tema1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sociales_\sociales_tema1.aspx.designer.cs">
+      <DependentUpon>sociales_tema1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sociales_\sociales_tema2.aspx.cs">
+      <DependentUpon>sociales_tema2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sociales_\sociales_tema2.aspx.designer.cs">
+      <DependentUpon>sociales_tema2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sociales_\sociales_tema3.aspx.cs">
+      <DependentUpon>sociales_tema3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sociales_\sociales_tema3.aspx.designer.cs">
+      <DependentUpon>sociales_tema3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sociales_\sociales_tema4.aspx.cs">
+      <DependentUpon>sociales_tema4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sociales_\sociales_tema4.aspx.designer.cs">
+      <DependentUpon>sociales_tema4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sociales_\sociales_tema5.aspx.cs">
+      <DependentUpon>sociales_tema5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sociales_\sociales_tema5.aspx.designer.cs">
+      <DependentUpon>sociales_tema5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sociales_\sociales_tema6.aspx.cs">
+      <DependentUpon>sociales_tema6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sociales_\sociales_tema6.aspx.designer.cs">
+      <DependentUpon>sociales_tema6.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="App_Themes\App_LocalResources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58401</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
